@@ -1,0 +1,31 @@
+package com.example.concurrency;
+
+final class Employee {
+
+    private final int id;
+    private final String name;
+
+    public Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class ImmutableExample {
+
+    public static void main(String[] args) {
+
+        Employee emp =
+                new Employee(1, "John");
+
+        System.out.println(emp.getName());
+    }
+}
