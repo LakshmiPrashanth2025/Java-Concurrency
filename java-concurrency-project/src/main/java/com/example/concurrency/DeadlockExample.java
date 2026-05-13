@@ -1,3 +1,5 @@
+package com.example.concurrency;
+
 public class DeadlockExample {
 
     static final Object lock1 = new Object();
